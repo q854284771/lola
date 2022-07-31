@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "author": "AR10",
   "scripts": {
-    "dev": "vite dev & pnpm run tauri dev",
-    "build": "vite build && pnpm run tauri build",
+    "dev": "npm run tauri dev",
+    "dev:vite": "vite dev",
+    "build": "npm run tauri build",
     "build:vite": "vite build",
     "serve": "vite preview",
     "eslint": "eslint src",
@@ -17,11 +18,14 @@
     "@types/node": "18.6.2",
     "@typescript-eslint/eslint-plugin": "5.31.0",
     "@typescript-eslint/parser": "5.31.0",
+    "add": "^2.0.6",
     "autoprefixer": "10.4.8",
+    "babel-plugin-solid-labels": "^0.12.0",
     "cssnano": "5.1.12",
     "eslint": "8.20.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
+    "pnpm": "^7.8.0",
     "postcss": "8.4.14",
     "prettier": "2.7.1",
     "tailwindcss": "3.1.7",
@@ -31,6 +35,7 @@
     "vite-plugin-tauri": "2.2.0"
   },
   "dependencies": {
+    "@suid/material": "^0.4.3",
     "@tauri-apps/api": "1.0.2",
     "solid-js": "1.4.8"
   }

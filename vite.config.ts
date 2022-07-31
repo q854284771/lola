@@ -1,8 +1,15 @@
+import solidLabels from 'babel-plugin-solid-labels'
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
 
 export default defineConfig({
-  plugins: [solidPlugin()],
+  plugins: [
+    solidPlugin({
+      babel: {
+        plugins: [[solidLabels, { dev: process.env.NODE_ENV !== 'production' }]],
+      },
+    }),
+  ],
   // prevent vite from obscuring rust errors
   clearScreen: false,
   // Tauri expects a fixed port, fail if that port is not available
