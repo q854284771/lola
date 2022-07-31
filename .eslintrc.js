@@ -5,7 +5,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:prettier/recommended',
-    'prettier'
+    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 2021,
@@ -16,14 +16,14 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    es2021: true
+    es2021: true,
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    "prettier/prettier": "error",
-    "@typescript-eslint/indent": ["error", 2],
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error"
+    'prettier/prettier': 'error',
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-explicit-any': 'error',
   },
-  ignorePatterns: ['node_modules']
+  ignorePatterns: ['node_modules'],
 }
